@@ -70,7 +70,7 @@ export default class NewAuthor extends Component {
               required
               className="form-control"
               value={this.state.lastName}
-              onChange={this.onChangelastName}
+              onChange={this.onChangeLastName}
             />
           </div>
 
