@@ -6,12 +6,11 @@ export default class NewBook extends Component {
     super(props);
 
     this.onChangeTitle = this.onChangeTitle.bind(this);
-    this.onChangeAuthor = this.onChangeAuthor.bind(this);
+
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
       title: '',
-      author: '',
     };
   }
 
@@ -20,17 +19,11 @@ export default class NewBook extends Component {
       title: e.target.value,
     });
   }
-  onChangeAuthor(e) {
-    this.setState({
-      author: e.target.value,
-    });
-  }
 
   onSubmit(e) {
     e.preventDefault();
     const book = {
       title: this.state.title,
-      author: this.state.author,
     };
     console.log(book);
 
@@ -54,15 +47,6 @@ export default class NewBook extends Component {
               className="form-control"
               value={this.state.title}
               onChange={this.onChangeTitle}
-            />
-          </div>
-          <div className="form-group">
-            <label>Author: </label>
-            <input
-              type="text"
-              className="form-control"
-              value={this.state.author}
-              onChange={this.onChangeAuthor}
             />
           </div>
 
