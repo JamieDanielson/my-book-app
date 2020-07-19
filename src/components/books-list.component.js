@@ -65,7 +65,7 @@ export default class BooksList extends Component {
         <table className="table">
           <thead className="thead-light">
             <tr>
-              <th>Book</th>
+              <th>Book Title</th>
               <th>Actions</th>
             </tr>
           </thead>
