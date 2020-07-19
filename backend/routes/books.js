@@ -7,13 +7,11 @@ router.route('/').get((req, res) => {
     .catch((err) => res.status(400).json('Error: ' + err));
 });
 
-router.route('/add').post((req, res) => {
+router.route('/new').post((req, res) => {
   const title = req.body.title;
-  const author = req.body.author;
 
   const newBook = new Book({
     title,
-    author,
   });
 
   newBook

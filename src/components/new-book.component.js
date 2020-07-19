@@ -22,13 +22,15 @@ export default class NewBook extends Component {
 
   onSubmit(e) {
     e.preventDefault();
+
     const book = {
       title: this.state.title,
     };
+
     console.log(book);
 
     axios
-      .post('http://localhost:5000/books/new', NewBook)
+      .post('http://localhost:5000/books/new', book)
       .then((res) => console.log(res.data));
 
     this.setState({
