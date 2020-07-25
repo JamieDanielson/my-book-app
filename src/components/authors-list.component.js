@@ -8,14 +8,13 @@ const Author = (props) => (
     <td>{props.author.lastName}</td>
     <td>
       <Link to={'/edit/' + props.author._id}>edit</Link> |{' '}
-      <a
-        href="#"
+      <button
         onClick={() => {
           props.deleteAuthor(props.author._id);
         }}
       >
         delete
-      </a>
+      </button>
     </td>
   </tr>
 );

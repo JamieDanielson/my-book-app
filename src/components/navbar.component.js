@@ -20,16 +20,6 @@ export default class Navbar extends Component {
                 Add New Book
               </Link>
             </li>
-            <li className="navbar-item">
-              <Link to="/authors" className="nav-link">
-                All Authors
-              </Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/authors/new" className="nav-link">
-                Add New Author
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>

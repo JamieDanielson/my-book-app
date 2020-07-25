@@ -8,13 +8,13 @@ navigate to <http://localhost:3000/> for app, endpoints hit <http://localhost:50
 
 TODO:
 
-- [ ] Fix delete for both books and authors
-- [ ] Fix Edit for both books and authors
+- [x] Fix delete for both books and authors
+- [ ] Fix Edit for books
 - [ ] Update styling
 - [ ] Create landing page
 - [ ] Move "new" into list pages and/or add ability to add new from list page
 - [ ] Create bookauthor table
-- [ ] Change edit and delete to buttons
+- [x] Change edit and delete to buttons
 
 ---
 
