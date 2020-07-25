@@ -7,8 +7,6 @@ import Navbar from './components/navbar.component';
 import BooksList from './components/books-list.component';
 import EditBook from './components/edit-book.component';
 import NewBook from './components/new-book.component';
-import AuthorsList from './components/authors-list.component';
-import NewAuthor from './components/new-author.component';
 
 function App() {
   return (
@@ -20,8 +18,6 @@ function App() {
           <Route path="/books" exact component={BooksList} />
           <Route path="/books/new" exact component={NewBook} />
           <Route path="/books/edit/:id" exact component={EditBook} />
-          <Route path="/authors" exact component={AuthorsList} />
-          <Route path="/authors/new" exact component={NewAuthor} />
         </div>
       </div>
     </Router>
